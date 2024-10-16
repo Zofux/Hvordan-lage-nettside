@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2>🔥Hvordan lage en nettside🔥</h2>
+    </nav>
+
+    <div class="tutorial-content">
+        <div class="box">
+            <h1>Utnytte JavaScript: Intern og Ekstern</h1>
+            <p>JavaScript kan integreres i HTML-dokumenter på to hovedmåter: internt og eksternt. Her er hva som menes med hver metode:</p>
+            <h2>Intern JavaScript</h2>
+            <p>Intern JavaScript er når du skriver JavaScript-kode direkte i HTML-filen. Dette gjøres vanligvis innenfor en <code>&lt;script&gt;</code>-tag. Denne metoden er nyttig for mindre skript eller for rask testing.</p>
+            <br>
+            <h2>Kodeeksempel på intern JavaScript</h2>
+            <div class="code-block">
+                <span class="string">&lt;script&gt;</span><br>
+                <span class="keyword">function</span> <span class="keyword">showMessage</span>() {<br>
+                &nbsp;&nbsp;<span class="keyword">alert</span>(<span class="string">'Dette er intern JavaScript!'</span>);<br>}<br><br>
+                <span class="keyword">showMessage</span>();<br>
+                <span class="string">&lt;/script&gt;</span>
+            </div>
+            <br>
+            <h2>Ekstern JavaScript</h2>
+            <p>Ekstern JavaScript innebærer å lagre JavaScript-koden i en separat fil med filtypen <code>.js</code>. Denne metoden gir bedre organisering og gjenbruk av koden, samt en renere HTML-struktur. Du kan knytte den eksterne filen til HTML-dokumentet ved å bruke <code>&lt;script src="filnavn.js"&gt;&lt;/script&gt;</code>.</p>
+            <br>
+            <h2>Kodeeksempel på ekstern JavaScript</h2>
+            <p>Innholdet i en ekstern <code>script.js</code>-fil:</p>
+            <div class="code-block">
+                <span class="keyword">function</span> <span class="keyword">showMessage</span>() {<br>
+                &nbsp;&nbsp;<span class="keyword">alert</span>(<span class="string">'Dette er ekstern JavaScript!'</span>);<br>}<br><br>
+                <span class="keyword">showMessage</span>();
+            </div>
+            <p>Og i HTML-filen:</p>
+            <div class="code-block">
+                <span class="string">&lt;script src="script.js"&gt;&lt;/script&gt;</span>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Grunnleggende Syntaks i JavaScript</h1>
+            <p>JavaScript har en enkel og lettfattelig syntaks. Her er noen av de grunnleggende elementene:</p> <br>
+            <p><strong>Variabler:</strong> Brukes til å lagre data og kan deklareres med <code>let</code>, <code>const</code>, eller <code>var</code>.</p><br>
+            <p><strong>Datatyper:</strong> Vanlige datatyper inkluderer <code>string</code>, <code>number</code>, <code>boolean</code>, og <code>object</code>.</p><br>
+            <p><strong>Operatorer:</strong> Inkluderer aritmetiske operatorer (+, -, *, /), sammenligningsoperatorer (==, ===, !=, !==), og logiske operatorer (&&, ||, !).</p><br>
+            <p><strong>Funksjoner:</strong> Brukes til å definere gjenbrukbare kodeblokker.</p><br>
+
+            <h2>Kodeeksempel</h2>
+            <p>Nedenfor er et eksempel på hvordan man bruker variabler og funksjoner i JavaScript:</p>
+            <div class="code-block">
+                <span class="comment">// Deklarerer en funksjon som beregner arealet av et rektangel</span><br>
+                <span class="keyword">function</span> <span class="keyword">calculateArea</span>(<span class="keyword">length</span>, <span class="keyword">width</span>) {<br>
+                &nbsp;&nbsp;<span class="keyword">return</span> <span class="keyword">length</span> * <span class="keyword">width</span>;<br>}<br><br>
+                <span class="keyword">let</span> <span class="keyword">area</span> = <span class="keyword">calculateArea</span>(<span class="number">5</span>, <span class="number">10</span>);<br>
+                <span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">'Arealet er: '</span> + <span class="keyword">area</span>);
+            </div>
+
+
+        </div>
+        <div class="box">
+            <h1>Kontrollstrukturer i JavaScript</h1>
+            <p>Kontrollstrukturer i JavaScript brukes til å styre flyten av programmet basert på bestemte betingelser. De vanligste kontrollstrukturene inkluderer:</p><br>
+            <p><strong>if-else:</strong> Brukes for å utføre kode hvis en betingelse er sann, og en annen kode hvis den er usann.</p><br>
+            <p><strong>switch:</strong> Brukes for å teste en variabel mot flere verdier.</p><br>
+            <p><strong>for-løkker:</strong> Brukes til å repetere kode en bestemt antall ganger.</p><br>
+            <p><strong>while-løkker:</strong> Utfører kode så lenge en betingelse er sann.</p><br>
+
+            <h2>Kodeeksempel</h2>
+            <p>Nedenfor er et eksempel som bruker <code>if-else</code> og <code>for</code>-løkker for å evaluere tall:</p>
+            <div class="code-block">
+                <span class="comment">// Sjekker om et tall er partall eller oddetall</span><br>
+                <span class="keyword">function</span> <span class="keyword">checkEvenOdd</span>(<span class="keyword">num</span>) {<br>
+                &nbsp;&nbsp;<span class="keyword">if</span> (<span class="keyword">num</span> % <span class="number">2</span> === <span:number>0</span>) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">'%num er et partall.'</span>);<br>
+                &nbsp;&nbsp;} <span class="keyword">else</span> {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">'%num er et oddetall.'</span>);<br>
+                &nbsp;&nbsp;}<br>}<br><br>
+
+                <span class="keyword">for</span> (<span class="keyword">let</span> <span class="keyword">i</span> = <span:number>1</span>; <span keyword="i">i</span> <= <span class="number">10</span>; <span class="keyword">i</span>++) {<br>
+                &nbsp;&nbsp;<span class="keyword">checkEvenOdd</span>(<span class="keyword">i</span>);<br>}
+            </div>
+        </div>
+        <div class="box">
+            <h1>Funksjoner i JavaScript</h1>
+            <p>Funksjoner er en av de mest sentrale delene av JavaScript. De lar deg definere gjenbrukbare kodeblokker som kan utføre spesifikke oppgaver. Funksjoner kan ta inn parametere og returnere verdier. Her er noen viktige punkter:</p><br>
+            <p><strong>Definere en funksjon:</strong> Du kan definere en funksjon ved å bruke <code>function</code>-nøkkelordet, etterfulgt av funksjonsnavnet og en liste over parametere. Funksjoner kan også være anonyme, dette kalles "arrow"-funksjoner, de ser slik ut <code>() =></code></p><br>
+            <p><strong>Kalle på en funksjon:</strong> Når en funksjon er definert, kan du kalle den ved å bruke dens navn og sende inn verdier for parametrene.</p><br>
+            <p><strong>Returverdi:</strong> Funksjoner kan returnere en verdi til den som kaller dem ved hjelp av <code>return</code>-nøkkelordet.</p><br>
+
+            <h2>Kodeeksempel</h2>
+            <p>Nedenfor er et eksempel på hvordan man definerer og bruker en funksjon i JavaScript:</p>
+            <div class="code-block">
+                <span class="comment">// Definerer en funksjon som legger sammen to tall</span><br>
+                <span class="keyword">function</span> <span class="keyword">addNumbers</span>(<span class="keyword">a</span>, <span class="keyword">b</span>) {<br>
+                &nbsp;&nbsp;<span class="keyword">return</span> <span class="keyword">a</span> + <span class="keyword">b</span>;<br>}<br><br>
+                <span class="keyword">let</span> <span class="keyword">sum</span> = <span class="keyword">addNumbers</span>(<span class="number">5</span>, <span class="number">10</span>);<br>
+                <span class="keyword">console</span>.<span class="keyword">log</span>(<span class="string">'Summen er: '</span> + <span class="keyword">sum</span>);
+            </div>
+        </div>
+        <div class="box">
+            <h1>Manipulere DOM med JavaScript</h1>
+            <p>DOM (Document Object Model) representerer strukturen til HTML-dokumentet som et tre av objekter, og JavaScript kan brukes til å manipulere disse objektene. Dette inkluderer å legge til, endre eller fjerne elementer i dokumentet. Her er noen vanlige metoder for DOM-manipulering:</p><br>
+            <p><strong>document.getElementById:</strong> Henter et element med en spesifikk ID.</p><br>
+            <p><strong>document.createElement:</strong> Lager et nytt HTML-element.</p><br>
+            <p><strong>appendChild:</strong> Legger til et nytt barn til et eksisterende element.</p><br>
+            <p><strong>innerHTML:</strong> Endrer innholdet i et element.</p><br>
+
+    <h2>Kodeeksempel</h2>
+    <p>Nedenfor er et eksempel som viser hvordan man manipulerer DOM for å legge til et nytt element:</p>
+    <div class="code-block">
+      <span class="comment">// Henter div-elementet der vi vil legge til nytt innhold</span><br>
+      <span class="keyword">const</span> <span class="keyword">container</span> = <span class="keyword">document</span>.<span class="keyword">getElementById</span>(<span class="string">'content'</span>);<br><br>
+
+      <span class="comment">// Lager et nytt avsnittselement</span><br>
+      <span class="keyword">const</span> <span class="keyword">newParagraph</span> = <span class="keyword">document</span>.<span class="keyword">createElement</span>(<span class="string">'p'</span>);<br><br>
+
+      <span class="comment">// Setter innholdet i det nye avsnittet</span><br>
+      <span class="keyword">newParagraph</span>.<span class="keyword">innerHTML</span> = <span class="string>'Dette er et nytt avsnitt som ble lagt til med JavaScript.'</span>;<br><br>
+
+      <span class="comment">// Legger til det nye avsnittet i containeren</span><br>
+      <span class="keyword">container</span>.<span class="keyword">appendChild</span>(<span class="keyword">newParagraph</span>);
+    </div>
+
+    <h2>HTML for innholdselementet</h2>
+    <p>For å teste dette eksempelet, inkluder en div med ID <code>content</code> i HTML:</p>
+    <div class="code-block">
+      <span class="tag">&lt;div id="content"&gt;&lt;/div&gt;</span>
+    </div>
+        </div>
+        <div class="box">
+            <h1>Hendelseshåndtering i JavaScript</h1>
+            <p>Hendelseshåndtering i JavaScript gjør det mulig for programmer å reagere på brukerinteraksjoner, som klikk, tastetrykk og musbevegelser. Når en hendelse skjer, kan en funksjon, også kjent som en "hendelsesbehandler", bli kalt for å håndtere denne hendelsen. Her er noen viktige punkter:</p>
+            <p><strong>Legge til hendelseshåndterere:</strong> Du kan legge til hendelseshåndterere ved å bruke <code>addEventListener</code>-metoden, som tar to argumenter: typen hendelse og funksjonen som skal kjøres når hendelsen inntreffer.</p>
+            <p><strong>Fjerne hendelseshåndterere:</strong> Du kan også fjerne hendelseshåndterere med <code>removeEventListener</code>.</p>
+            <br>
+            <h2>Kodeeksempel</h2>
+            <p>Nedenfor er et eksempel som viser hvordan man legger til en klikkhendelse på en knapp:</p>
+            <div class="code-block">
+                <span class="comment">// Henter knappen fra DOM</span><br>
+                <span class="keyword">const</span> <span class="keyword">button</span> = <span class="keyword">document</span>.<span class="keyword">getElementById</span>(<span class="string">'myButton'</span>);<br><br>
+                <span class="comment">// Definerer hendelsesbehandleren</span><br>
+                <span class="keyword">function</span> <span class="keyword">handleClick</span>() {<br>
+                &nbsp;&nbsp;<span class="keyword">alert</span>(<span class="string">'Knappen ble klikket!'</span>);<br>}<br><br>
+                <span class="comment">// Legger til klikkhendelse på knappen</span><br>
+                <span class="keyword">button</span>.<span class="keyword">addEventListener</span>(<span class="string">'click'</span>, <span class="keyword">handleClick</span>);
+            </div>
+
+            <h2>HTML for knappen</h2>
+            <p>For å teste dette eksempelet, inkluder en knapp i HTML:</p>
+            <div class="code-block">
+                <span class="tag">&lt;button id="myButton"&gt;</span>Klikk meg!<span class="tag">&lt;/button&gt;</span>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h2>Laget med ❤️ av Vebjørn</h2>
+            <a href="https://github.com/Zofux/Hvordan-lage-nettside" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h2>🔥Hvordan lage en nettside🔥</h2>
+    </nav>
+
+    <div class="tutorial-content">
+        <div class="box">
+            <h1>Grunnleggende HTML-struktur</h1>
+            <p>En HTML-side består av ulike deler som definerer hvordan innholdet skal vises i nettleseren. Her er en
+                enkel struktur som brukes i alle nettsider.</p>
+
+            <h2>Oppdeling av HTML-strukturen:</h2>
+            <p><code>&lt;!DOCTYPE html&gt;</code>: Dette er en deklarasjon som forteller nettleseren at dokumentet
+                erskrevet i HTML5.</p>
+            <p><code>&lt;html&gt;</code>: Denne taggen omslutter hele innholdet på siden og er roten av HTML-dokumentet.
+            </p>
+            <p><code>&lt;head&gt;</code>: Beskriver metadata som er viktig for hvordan siden fungerer.</p>
+            <p><code>&lt;body&gt;</code>: Inneholder alt som vises på nettsiden, som tekst, bilder og lenker.</p>
+
+            <h2>Tips og beste praksis:</h2>
+            <p>Det er viktig å bruke riktig struktur, slik at nettsiden fungerer på tvers av ulike nettlesere. Husk også
+                å bruke formatering som gjør koden enkel å lese.</p>
+        </div>
+        <div class="box">
+            <div class="code-container">
+                <h1>Eksempel på HTML-struktur:</h1>
+                <div class="code-block">
+                    <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+                    <span class="tag">&lt;html&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Min enkle nettside<span
+                        class="tag">&lt;/title&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h1&gt;</span>Velkommen til min enkle nettside<span
+                        class="tag">&lt;/h1&gt;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>Dette er et eksempel på en enkel
+                    HTML-struktur.<span class="tag">&lt;/p&gt;</span><br>
+                    &nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+                    <span class="tag">&lt;/html&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Grunnleggende tagger</h1>
+            <p>Her er noen av de viktigste HTML-taggene som brukes for å lage struktur på en nettside:</p><br>
+
+            <p><code>&lt;h1&gt;</code>: Dette brukes til å lage den største overskriften på en nettside. Det kan brukes for hovedtittelen.</p><br>
+            <p><code>&lt;p&gt;</code>: Dette brukes for å lage et avsnitt med tekst. Alt innholdet i et avsnitt pakkes inn i denne taggen.</p><br>
+            <p><code>&lt;a&gt;</code>: Dette er en lenketagg som brukes for å lage en hyperkobling til en annen nettside eller ressurs. Det krever en <code>href</code>-attributt for å angi lenken.</p><br>
+            <p><code>&lt;img&gt;</code>: Dette brukes for å legge til bilder på nettsiden. Taggen inneholder en <code>src</code>-attributt for bildeadressen, og <code>alt</code> for alternativ tekst.</p><br>
+            <p><code>&lt;ul&gt;</code> og <code>&lt;li&gt;</code>: Dette brukes til å lage punktlister. <code>&lt;ul&gt;</code> er for uordnet liste, og <code>&lt;li&gt;</code> brukes for hvert enkelt punkt i listen.</p><br>
+        </div>
+        <div class="box">
+            <h1>Eksempel på bruk av grunnlegende tagger:</h1>
+            <div class="code-block">
+                <span class="tag">&lt;h1&gt;</span>Dette er en overskrift<span class="tag">&lt;/h1&gt;</span><br>
+                <span class="tag">&lt;p&gt;</span>Dette er et avsnitt med tekst.<span class="tag">&lt;/p&gt;</span><br>
+                <span class="tag">&lt;a href="https://example.com"&gt;</span>Besøk vår side<span class="tag">&lt;/a&gt;</span><br>
+                <span class="tag">&lt;img src="bilde.jpg" alt="Et bilde"&gt;</span><br>
+                <span class="tag">&lt;ul&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Punkt 1<span class="tag">&lt;/li&gt;</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;li&gt;</span>Punkt 2<span class="tag">&lt;/li&gt;</span><br>
+                <span class="tag">&lt;/ul&gt;</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Laget med ❤️ av Vebjørn</h2>
+            <a href="https://github.com/Zofux/Hvordan-lage-nettside"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+:root {
+    --background-color: #F1F1F1;
+    --purple: #5A45FF;
+    --navbar-bacground-color: #F3F0FF;
+    --box-background-color: #FFFFFF;
+    --link-color: rgb(49, 103, 240);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Source Sans Pro, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    color: #2c3e50;
+}
+
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: var(--navbar-bacground-color);
+    border-bottom: 2px solid var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-arrow-left {
+    text-align: left;
+    font-size: 1.7rem;
+    position: relative;
+    left: 20px;
+}
+
+nav h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    column-gap: 30px;
+}
+
+.box {
+    background-color: var(--box-background-color);
+    min-height: 49vh;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.box a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+#info-box-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+.info-box {
+    background-color: var(--navbar-bacground-color);
+    border: 1px solid var(--purple);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    opacity: 85%;
+    padding-top: 15px;
+    padding: 20px;
+    max-height: 40px;
+    overflow-y: hidden;
+}
+
+.info-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    top: -10px;
+}
+
+.info-box:hover {
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    position: relative;
+    font-size: 1.5rem;
+    right: 20px;
+    transition: all 0.1s ease-in;
+}
+
+.open {
+    max-height: 24vh;
+}
+
+.fa-chevron-left.open {
+    transform: rotate(-90deg);
+}
+
+.line {
+    height: 1px;
+    background-color: var(--purple);
+    margin-bottom: 20px;
+}
+
+.html-text {
+    color: orangered;
+}
+
+.css-text {
+    color: rgb(0, 94, 255);
+}
+
+.js-text {
+    color: rgb(255, 204, 0);
+}
+
+footer {
+    position: relative;
+    top: 210px;
+    width: 100vw;
+    background-color: var(--navbar-bacground-color);
+    border-top: 2px solid var(--purple);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer-content a {
+    font-size: 2rem;
+    color: rgb(27, 26, 26);
+    position: relative;
+    top: -5px;
+    right: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-content a:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.tutorial-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media screen and (max-width:1100px) {
+    .tutorial-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.code-container h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #c0392b;
+}
+
+.code-block {
+    background-color: #f4f4f4;
+    border-left: 5px solid var(--purple);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.code-block .tag {
+    color: #ee303d;
+}
+
+.class {
+    color: rgb(5, 192, 5);
+}
+
+.element {
+    color: #ee303d;
+}
+
+.property {
+    color: rgb(33, 199, 182);
+}
+
+.value {
+    color: rgb(216, 10, 216);
+}
+
+.keyword {
+    color: #c678dd;
+}
+
+.string {
+    color: #98c379;
+}
+
+.number {
+    color: #d19a66;
+}
+
+.comment {
+    color: #7f848e;
+}

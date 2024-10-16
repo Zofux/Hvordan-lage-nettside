@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hvordan lage en nettside</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+    <nav>
+        <h2>🔥Hvordan lage en nettside🔥</h2>
+    </nav>
+
+    <div class="main-content">
+        <div class="box">
+            <h1>Hvordan lager man en nettside</h1>
+            <p>Å lage en nettside er enklere enn man skulle tro, på denne siden finner du en kort intro til hvordan man
+                kan starte med å lage en enkel nettside.</p>
+            <br>
+            <p>For å gjøre det enkelt å lage en nettside er det viktig med en god "texteditor", vi foreslår å bruke <a
+                    href="https://code.visualstudio.com/" target="_blank">Microsoft Visual Studio Code</a> for den beste
+                opplevelsen. Dette er aplikasjonen til skriver/redigerer koden til nettsiden.</p>
+            <br>
+            <p>Til slutt må man lære litt om hvordan en nettside lages, dette gjør man gjennom bruk av diverse
+                kodespråk, klikk på knappene i den andre boksen for å lære mer.</p>
+        </div>
+        <div class="box" id="info-box-container">
+            <div class="test">
+                <div class="info-box" id="html">
+                    <div class="info-box-header">
+                        <h2><i class="html-text">HTML</i> - Kroppen til nettsiden</h2>
+                        <i class="fa-solid fa-chevron-left" id="chevron1"></i>
+                    </div>
+                    <div class="line"></div>
+                    <div class="info-box-content">
+                        <p>HTML (HyperText Markup Language) er et standardisert språk som brukes for å strukturere
+                            innhold på nettsider. Det består av elementer, kalt "tagger", som definerer hvordan ulike
+                            deler av en nettside skal vises i en nettleser, som tekst, bilder, lenker og multimedia.
+                            HTML er grunnlaget for all webutvikling, og fungerer sammen med CSS og JavaScript for å
+                            skape interaktive og visuelt tiltalende nettsider. <a href="./html.html">Les mer...</a></p>
+                    </div>
+                </div>
+                <div class="info-box" id="css">
+                    <div class="info-box-header">
+                        <h2><i class="css-text">CSS</i> - Hvordan nettsiden ser ut</h2>
+                        <i class="fa-solid fa-chevron-left" id="chevron2"></i>
+                    </div>
+                    <div class="line"></div>
+                    <div class="info-box-content">
+                        <p>CSS (Cascading Style Sheets) er et stilarksspråk som brukes for å bestemme utseendet og
+                            layouten på en nettside. Det kontrollerer farger, skrifttyper, mellomrom, og plassering av
+                            elementer, og gir utviklere mulighet til å lage en visuelt tiltalende side. CSS gjør det
+                            enkelt å style flere HTML-elementer samtidig. <a href="./css.html">Les mer...</a></p>
+                    </div>
+                </div>
+                <div class="info-box" id="js">
+                    <div class="info-box-header">
+                        <h2><i class="js-text">Javascript</i> - Funksjonalitet</h2>
+                        <i class="fa-solid fa-chevron-left" id="chevron3"></i>
+                    </div>
+                    <div class="line"></div>
+                    <div class="info-box-content">
+                        <p>JavaScript er et programmeringsspråk som brukes for å gjøre nettsider dynamiske og
+                            interaktive. Det lar utviklere manipulere HTML-innhold i sanntid, håndtere brukerhendelser
+                            som klikk, og lage animasjoner. JavaScript kjører direkte i nettleseren, og er en viktig del
+                            av moderne webutvikling for å forbedre brukeropplevelsen. <a href="./js.html">Les mer...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Laget med ❤️ av Vebjørn</h2>
+            <a href="https://github.com/Zofux/Hvordan-lage-nettside" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </footer>
 </body>
+
 </html>
