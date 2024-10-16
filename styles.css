@@ -160,12 +160,16 @@ img:hover {
     color: rgb(255, 204, 0);
 }
 
+#wave {
+    position: relative;
+    bottom: -170px;
+}
+
 footer {
     position: relative;
     top: 150px;
     width: 100vw;
-    background-color: var(--navbar-bacground-color);
-    border-top: 2px solid var(--purple);
+    background-color: var(--box-background-color);
     padding: 20px;
 }
 
