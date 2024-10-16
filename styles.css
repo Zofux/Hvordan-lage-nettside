@@ -70,12 +70,31 @@ p {
     text-decoration: underline;
 }
 
+.center-imgs {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.imgs img {
+    height: 150px;
+    width: auto;
+    transition: all 0.4s ease-in-out;
+}
+img:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
 #info-box-container {
     justify-content: center;
     align-items: center;
 }
 
-.test {
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -86,12 +105,12 @@ p {
     background-color: var(--navbar-bacground-color);
     border: 1px solid var(--purple);
     border-radius: 3px;
-    transition: all 0.3s ease-in-out;
     opacity: 85%;
     padding-top: 15px;
     padding: 20px;
     max-height: 40px;
     overflow-y: hidden;
+    transition: all 0.4s ease-in-out;
 }
 
 .info-box-header {
@@ -116,7 +135,7 @@ p {
 }
 
 .open {
-    max-height: 24vh;
+    max-height: 30vh;
 }
 
 .fa-chevron-left.open {
@@ -143,7 +162,7 @@ p {
 
 footer {
     position: relative;
-    top: 210px;
+    top: 150px;
     width: 100vw;
     background-color: var(--navbar-bacground-color);
     border-top: 2px solid var(--purple);
@@ -179,12 +198,6 @@ footer {
     row-gap: 20px;
 }
 
-@media screen and (max-width:1100px) {
-    .tutorial-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 .code-container h1 {
     color: #2c3e50;
     font-size: 2rem;
@@ -206,6 +219,7 @@ code {
     font-family: "Courier New", Courier, monospace;
 }
 
+/* Farge på kodeeksemplene */
 .code-block .tag {
     color: #ee303d;
 }
@@ -240,4 +254,28 @@ code {
 
 .comment {
     color: #7f848e;
+}
+
+/* Endringer når skjærmstørrelse endres */ 
+
+@media screen and (max-width: 1500px){
+    .open {
+        max-height: 45vh;
+    }
+    .center-imgs {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .tutorial-content {
+        grid-template-columns: 1fr;
+    }
+    .main-content {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .open {
+        max-height: 30vh;
+    }
 }
