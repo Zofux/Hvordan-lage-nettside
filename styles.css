@@ -255,7 +255,7 @@ code {
 
 @media screen and (max-width: 1500px){
     .open {
-        max-height: 45vh;
+        max-height: 70vh;
     }
     .imgs img {
         height: 100px;
