@@ -26,43 +26,66 @@
                 }
             </div>
         </div>
-            <div class="box">
-                <h1>Eksempel på grunnlegende CSS:</h1>
-                <div class="code-block">
-                    <span class="element">h1</span> {<br>
-                    &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>
-                    &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">24px</span>;<br>
-                    }<br><br>
+        <div class="box">
+            <h1>Eksempel på grunnlegende CSS:</h1>
+            <div class="code-block">
+                <span class="element">h1</span> {<br>
+                &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>
+                &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">24px</span>;<br>
+                }<br><br>
 
-                    <span class="class">.box</span> {<br>
-                    &nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
-                    &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">10px</span>;<br>
-                    }
-                </div>
+                <span class="class">.box</span> {<br>
+                &nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
+                &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">10px</span>;<br>
+                }
             </div>
-            <div class="box">
-                <h1>Typer av selektorer</h1>
-                <p><strong>Elementselektorer:</strong> Velger elementer basert på deres taggnavn (f.eks. <code>h1</code>, <code>p</code>).</p>
-                <p><strong>Klasseselektorer:</strong> Velger elementer med en spesifikk klasse (f.eks. <code>.classname</code>).</p>
-                <p><strong>ID-selektorer:</strong> Velger elementer med en spesifikk ID (f.eks. <code>#idname</code>).</p>
-                <p><strong>Attributt-selektorer:</strong> Velger elementer basert på et spesifikt attributt (f.eks. <code>[type="text"]</code>).</p>
-                <p><strong>Pseudo-klasser:</strong> Velger elementer i spesifikke tilstander (f.eks. <code>:hover</code>, <code>:first-child</code>).</p>
-                <p><strong>Kombinatorer:</strong> Kombinerer selektorer (f.eks. <code>div p</code> for å velge <code>p</code>-elementer inne i <code>div</code>).</p>
+        </div>
+        <div class="box">
+            <h1>Hvordan ta utnytte av CSS</h1>
+            <h3>Intern CSS</h3>
+            <p>Intern CSS legges inn i <code>&lt;style&gt;</code>-taggen i <code>&lt;head&gt;</code>-delen av dokumentet. Her er et eksempel:</p>
+            <div class="code-block">
+                <span class="element">&lt;style&gt;</span><br>
+                &nbsp;&nbsp;<span class="element">body</span> {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">font-family</span>: <span class="value">'Arial', sans-serif</span>;<br>
+                &nbsp;&nbsp;}<br>
+                <span class="element">&lt;/style&gt;</span>
             </div>
-            <div class="box">
-                <h1>Eksempel på mer omfattende CSS:</h1>
-                <div class="code-block">
-                    <span class="element">h1</span> {<br>
-                    &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>}<br><br>
-                    <span class="class">.box</span> {<br>
-                    &nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
-                    &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">10px</span>;<br>}<br><br>
-                    <span class="element">p</span> {<br>
-                    &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">16px</span>;<br>
-                    &nbsp;&nbsp;<span class="property">margin</span>: <span class="value">15px</span>;<br>}<br><br>
-                    <span class="element">ul</span> {<br>
-                    &nbsp;&nbsp;<span class="property">list-style-type</span>: <span class="value">none</span>;<br>}
+    
+            <h3>Ekstern CSS</h3>
+            <p>Ekstern CSS lagres i en egen .css-fil og lenkes til HTML-dokumentet med <code>&lt;link&gt;</code>-taggen som du skriver i <code>&lt;head&gt;</code>. Her er et eksempel:</p>
+            <div class="code-block">
+                <span class="element">&lt;link rel="stylesheet" href="styles.css"&gt;</span><br><br>
+                /* styles.css */ <br>
+                <span class="element">h1</span> {<br>
+                &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>
+                &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">30px</span>;<br>}
             </div>
+        </div>
+        <div class="box">
+            <h1>Typer av selektorer</h1>
+            <p><strong>Elementselektorer:</strong> Velger elementer basert på deres taggnavn (f.eks. <code>h1</code>, <code>p</code>).</p>
+            <p><strong>Klasseselektorer:</strong> Velger elementer med en spesifikk klasse (f.eks. <code>.classname</code>).</p>
+            <p><strong>ID-selektorer:</strong> Velger elementer med en spesifikk ID (f.eks. <code>#idname</code>).</p>
+            <p><strong>Attributt-selektorer:</strong> Velger elementer basert på et spesifikt attributt (f.eks. <code>[type="text"]</code>).</p>
+            <p><strong>Pseudo-klasser:</strong> Velger elementer i spesifikke tilstander (f.eks. <code>:hover</code>, <code>:first-child</code>).</p>
+            <p><strong>Kombinatorer:</strong> Kombinerer selektorer (f.eks. <code>div p</code> for å velge <code>p</code>-elementer inne i <code>div</code>).</p>
+        </div>
+        <div class="box">
+            <h1>Eksempel på mer omfattende CSS:</h1>
+            <div class="code-block">
+                <span class="element">h1</span> {<br>
+                &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>}<br><br>
+                <span class="class">.box</span> {<br>
+                &nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
+                &nbsp;&nbsp;<span class="property">padding</span>: <span class="value">10px</span>;<br>}<br><br>
+                <span class="element">p</span> {<br>
+                &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">16px</span>;<br>
+                &nbsp;&nbsp;<span class="property">margin</span>: <span class="value">15px</span>;<br>}<br><br>
+                <span class="element">ul</span> {<br>
+                &nbsp;&nbsp;<span class="property">list-style-type</span>: <span class="value">none</span>;<br>}
+        </div>
         </div>
         <div class="box">
             <h1>Vanlige CSS-egenskaper</h1>
@@ -118,29 +141,6 @@
                 <span class="element">.grid-container</span> {<br>
                 &nbsp;&nbsp;<span class="property">display</span>: <span class="value">grid</span>;<br>
                 &nbsp;&nbsp;<span class="property">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;<br>}
-            </div>
-        </div>
-        <div class="box">
-            <h1>Hvordan ta utnytte av CSS</h1>
-            <h3>Intern CSS</h3>
-            <p>Intern CSS legges inn i <code>&lt;style&gt;</code>-taggen i <code>&lt;head&gt;</code>-delen av dokumentet. Her er et eksempel:</p>
-            <div class="code-block">
-                <span class="element">&lt;style&gt;</span><br>
-                &nbsp;&nbsp;<span class="element">body</span> {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">background-color</span>: <span class="value">#f0f0f0</span>;<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">font-family</span>: <span class="value">'Arial', sans-serif</span>;<br>
-                &nbsp;&nbsp;}<br>
-                <span class="element">&lt;/style&gt;</span>
-            </div>
-    
-            <h3>Ekstern CSS</h3>
-            <p>Ekstern CSS lagres i en egen .css-fil og lenkes til HTML-dokumentet med <code>&lt;link&gt;</code>-taggen. Her er et eksempel:</p>
-            <div class="code-block">
-                <span class="element">&lt;link rel="stylesheet" href="styles.css"&gt;</span><br><br>
-                <span class="element">/* styles.css */</span><br>
-                <span class="element">h1</span> {<br>
-                &nbsp;&nbsp;<span class="property">color</span>: <span class="value">blue</span>;<br>
-                &nbsp;&nbsp;<span class="property">font-size</span>: <span class="value">30px</span>;<br>}
             </div>
         </div>
     </div>

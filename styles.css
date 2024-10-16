@@ -166,18 +166,18 @@ footer {
     width: 100vw;
     background-color: var(--navbar-bacground-color);
     border-top: 2px solid var(--purple);
+    padding: 10px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     position: relative;
     margin-top: 10px;
 }
 
 .footer-content a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: rgb(27, 26, 26);
     position: relative;
     top: -5px;
@@ -196,11 +196,6 @@ footer {
     padding: 20px;
     column-gap: 20px;
     row-gap: 20px;
-}
-
-.code-container h1 {
-    color: #2c3e50;
-    font-size: 2rem;
 }
 
 code {
@@ -262,8 +257,8 @@ code {
     .open {
         max-height: 45vh;
     }
-    .center-imgs {
-        display: none;
+    .imgs img {
+        height: 100px;
     }
 }
 
