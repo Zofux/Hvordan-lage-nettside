@@ -17,6 +17,7 @@ body {
     background-color: var(--background-color);
     overflow-x: hidden;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -169,8 +170,10 @@ footer {
     position: relative;
     top: 150px;
     width: 100vw;
+    max-width: 100%;
     background-color: var(--box-background-color);
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .footer-line {
@@ -290,9 +293,9 @@ code {
 
 /* Endringer når skjærmstørrelse endres */ 
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1600px){
     .open {
-        max-height: 70vh;
+        max-height: 42vh;
     }
     .imgs img {
         height: 100px;
@@ -309,5 +312,48 @@ code {
     }
     .open {
         max-height: 30vh;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    footer {
+        overflow-x: hidden;
+    }
+    #wave {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .footer-links {
+        top: 50px;
+        right: 0;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .info-box {
+        max-height: 20px;
+    }
+    .open {
+        max-height: 70vh;
+    }
+    .info-box p {
+        font-size: 1rem;
+    }
+    .info-box-header {
+        font-size: 0.8rem;
+    }
+    .imgs {
+        display: none;
+    }
+    .main-content {
+        margin: 10px;
     }
 }
